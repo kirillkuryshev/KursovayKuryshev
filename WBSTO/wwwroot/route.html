@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Маршруты</title>
+    <meta charset="windows-1251">
+    <meta name="keywords" content="билеты, автовокзал">
+    <meta name="author" content="Сизяков Иван">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts_index.js"></script>
+    <script src="js/checkRole.js"></script>
+</head>
+<body onload="{
+        check('admin');
+        load();
+    }">
+    <div class="px-3 py-2 bg-light text-black">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <img class="bi me-2" src="image/bookmark-check.svg" alt="Bootstrap" width="32" height="32">
+                    <span class="fs-4 text-black">With Bootstrap | Автовокзал онлайн</span>
+                </a>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="/route.html" class="nav-link text-black">
+                            <img class="bi d-block mx-auto mb-1" src="image/calendar-plus.svg" alt="" width="24" height="24">
+                            Маршруты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cruise.html" class="nav-link text-black">
+                            <img class="bi d-block mx-auto mb-1" src="image/activity.svg" alt="" width="24" height="24">
+                            Рейсы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/halt.html" class="nav-link text-black">
+                            <img class="bi d-block mx-auto mb-1" src="image/building.svg" alt="" width="24" height="24">
+                            Остановки
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="Exit()" class="nav-link text-black">
+                            <img class="bi d-block mx-auto mb-1" src="image/box-arrow-right.svg" alt="" width="24" height="24">
+                            Выход
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1>CRUD для категорий</h1>
+            <p>
+                <h2>Добавить категорию:</h2>
+            </p>
+            <div class="col-6">
+                <form>
+                    <div>
+                        Название категории<br />
+                        <input id="create" class="form-control" type="text" placeholder="Название" required>
+                    </div>
+                    <br />
+                    <button type="button" onclick="Create()" class="btn btn-primary">
+                        Добавить
+                    </button>
+                </form>
+            </div>
+            <h2>Все категории:</h2>
+            <div id="Categories" class="col-12">
+
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">© 2022 Сизяков Иван 3-42</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

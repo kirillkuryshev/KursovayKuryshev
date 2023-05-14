@@ -1,0 +1,25 @@
+{
+  "name": "wbsto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "snowpack.config.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "react-usestateref": "^1.0.8"
+  }
+}
